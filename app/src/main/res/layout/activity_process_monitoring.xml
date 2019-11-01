@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mcolors"
+    tools:context=".Activity_process_monitoring">
+
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="40dp"
+        android:text="WELCOME TO FETAL HEART RATE MONITOR"
+        android:textStyle="bold"
+        android:id="@+id/remind"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="50dp"
+        android:src="@mipmap/wave" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/fet"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="250dp"
+        android:src="@mipmap/fet" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="260dp"
+        android:text="120bmp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/mat"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="250dp"
+        android:src="@mipmap/mat" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="260dp"
+        android:text="200bmp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/shape"
+        android:textColor="@android:color/white"
+        android:text="start" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="180dp"
+        android:background="@drawable/shape"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="20dp"
+        android:text="stop" />
+
+
+</RelativeLayout>

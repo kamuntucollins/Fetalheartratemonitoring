@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Activity"
+            android:icon="@drawable/ic_activity"
+            android:title="Activity">
+
+        </item>
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings">
+
+        </item>
+        <item
+            android:id="@+id/Mysavings"
+            android:icon="@drawable/ic_savings"
+            android:title="Mysavings">
+
+        </item>
+
+        <item
+            android:id="@+id/Tips"
+            android:icon="@drawable/ic_tips"
+            android:title="Tips">
+
+        </item>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/Visit"
+                android:icon="@drawable/ic_visit"
+                android:title="Visit">
+
+            </item>
+            <item
+                android:id="@+id/Exit"
+                android:icon="@drawable/ic_exit"
+                android:title="Exit">
+
+            </item>
+
+        </menu>
+
+    </item>
+</menu>
