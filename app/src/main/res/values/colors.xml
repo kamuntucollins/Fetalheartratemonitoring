@@ -5,9 +5,12 @@
     <color name="colorAccent">#D81B60</color>
     <color name="mcolor">#F54788</color>
     <color name="color">#FC246C</color>
+    <color name="wcolors">#FEFFFE</color>
     <color name="mcolors">#EDF0ED</color>
     <color name="shapecolor">#121312</color>
     <!--color for button style -->
+    <color name="backgroundcolor">#E3E7E3</color>
+    <color name="wordcolor">#1277C7</color>
 
     <color name="gradient_start_color">#1455E0</color>
     <color name="gradient_end_color">#18a3fe</color>

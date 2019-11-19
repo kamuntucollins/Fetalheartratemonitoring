@@ -12,5 +12,9 @@
         android:id="@+id/Visit"
         android:title="Visit"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/logout"
+        android:title="logout"
+        app:showAsAction="never"/>
 </item>
 </menu>

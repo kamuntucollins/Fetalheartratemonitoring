@@ -15,6 +15,7 @@ public class Visitweb extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_visitweb);
+
         webView = findViewById(R.id.webview);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("http://www.google.com");

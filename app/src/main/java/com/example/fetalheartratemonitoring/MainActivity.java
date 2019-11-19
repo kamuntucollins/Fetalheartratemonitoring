@@ -100,7 +100,10 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                 Intent myintent2 = new Intent(MainActivity.this, Visitweb.class);
                 startActivity(myintent2);
                 break;
-
+            case R.id.logout:
+                Intent myintent3 = new Intent(MainActivity.this, Login.class);
+                startActivity(myintent3);
+                break;
             default:
                 return false;
         }

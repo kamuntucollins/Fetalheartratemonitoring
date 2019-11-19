@@ -32,7 +32,7 @@ public class IntroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         if (restorePrefData()) {
-            Intent myintent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent myintent = new Intent(getApplicationContext(),Login.class);
             startActivity(myintent);
             finish();
         }
@@ -115,7 +115,7 @@ requestWindowFeature(Window.FEATURE_NO_TITLE);
             public void onClick(View v) {
                 //opening main activity
 
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Login.class);
                 startActivity(intent);
                 //set aboolean variable to storage to check if the intro screen has been visited
                 //use of shared preferences to this part

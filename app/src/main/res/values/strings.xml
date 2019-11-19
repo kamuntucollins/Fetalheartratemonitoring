@@ -4,4 +4,13 @@
 
     <string name="drawer_open">Open Navigation </string>
     <string name="drawer_close">Close Navigation </string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">LOGIN</string>
+    <string name="not_registered">Not registered?</string>
+    <string name="register">REGISTER</string>
+    <string name="registeraccount">REGISTER</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="loginaccount">LOGIN</string>
+    <string name="confirm_password">confirm password</string>
 </resources>
