@@ -3,17 +3,25 @@
     package="com.example.fetalheartratemonitoring">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/fet"
+        android:icon="@mipmap/pregnant"
         android:label="Fetal Heart Rate Monitor"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Register"
-            android:parentActivityName=".Login"></activity>
-        <activity android:name=".Login" />
+        <activity android:name=".Results">
+
+        </activity>
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".Login"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Login"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
