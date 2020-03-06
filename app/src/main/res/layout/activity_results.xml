@@ -25,8 +25,9 @@
         android:src="@mipmap/fetus"
         android:layout_height="50dp"/>
     <TextView
+        android:id="@+id/view"
         android:layout_width="130dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:background="@drawable/smallinput"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="50dp"/>
@@ -49,9 +50,10 @@
         android:src="@mipmap/mother"
         android:layout_height="50dp"/>
     <TextView
+        android:id="@+id/view2"
         android:layout_width="130dp"
         android:background="@drawable/smallinput"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="150dp"/>
 
@@ -87,8 +89,17 @@
         android:layout_height="40dp" />
     <Button
         android:textColor="@color/c"
-        android:id="@+id/save"
+        android:id="@+id/connect"
         android:layout_marginTop="360dp"
+        android:text="connect"
+        android:background="@drawable/advanced_shape"
+        android:layout_marginLeft="50dp"
+        android:layout_width="240dp"
+        android:layout_height="40dp" />
+    <Button
+        android:textColor="@color/c"
+        android:id="@+id/save"
+        android:layout_marginTop="420dp"
         android:text="@string/save"
         android:background="@drawable/advanced_shape"
         android:layout_marginLeft="50dp"

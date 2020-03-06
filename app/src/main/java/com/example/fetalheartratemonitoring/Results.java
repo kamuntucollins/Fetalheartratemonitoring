@@ -1,6 +1,7 @@
 package com.example.fetalheartratemonitoring;
 
 import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Paint;
@@ -15,12 +16,14 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Set;
+
 public class Results extends AppCompatActivity {
     private static final int REQUEST_ENABLE_BT = 0;
     private static final int REQUEST_DISCOVER_BT = 1;
     Button button;
-    Button onBtn,offBtn;
-    TextView text;
+    Button onBtn,offBtn,conbtn;
+    TextView text,sview,sview2;
     BluetoothAdapter mBlueAdapter;
 
     @Override
@@ -30,7 +33,12 @@ public class Results extends AppCompatActivity {
 
         onBtn=findViewById(R.id.start);
         offBtn=findViewById(R.id.stop);
+        conbtn=findViewById(R.id.connect);
+        sview=findViewById(R.id.view);
+        sview2=findViewById(R.id.view2);
+
         mBlueAdapter = BluetoothAdapter.getDefaultAdapter();
+
         text=findViewById(R.id.heading);
        text.setPaintFlags(text.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
 
@@ -59,8 +67,27 @@ public class Results extends AppCompatActivity {
                 }
             }
         });
+        conbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mBlueAdapter.isEnabled()){
+                    sview.setText("RESULT:BABY");
+                    Set<BluetoothDevice> devices = mBlueAdapter.getBondedDevices();
+                    for (BluetoothDevice device:devices){
+                        sview.append("\nDevice" + device.getName() + "," + device);
+                    }
+                    sview2.setText("RESULTS: MOTHER");
+                    Set<BluetoothDevice> devices2 = mBlueAdapter.getBondedDevices();
+                    for (BluetoothDevice device:devices2){
+                        sview2.append("\nDevice" + device.getName() + "," + device);
+                    }
 
-        mBlueAdapter = BluetoothAdapter.getDefaultAdapter();
+                }else{
+                    Toast.makeText(Results.this, "turn on bluetooth to get paired devices", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
 
 
 
