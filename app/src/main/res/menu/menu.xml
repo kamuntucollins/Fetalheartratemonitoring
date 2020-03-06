@@ -7,23 +7,17 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/Activity"
-            android:icon="@drawable/ic_activity"
-            android:title="Activity">
-
-        </item>
-        <item
-            android:id="@+id/settings"
-            android:icon="@drawable/ic_settings_black_24dp"
-            android:title="Settings">
-
-        </item>
-        <item
             android:id="@+id/Mysavings"
             android:icon="@drawable/ic_savings"
             android:title="Mysavings">
 
         </item>
+        <item
+            android:id="@+id/Activity"
+            android:icon="@drawable/ic_activity"
+            android:title="Activity">
+        </item>
+
 
         <item
             android:id="@+id/Tips"

@@ -13,4 +13,11 @@
     <string name="already_registered">Already Registered?</string>
     <string name="loginaccount">LOGIN</string>
     <string name="confirm_password">confirm password</string>
+    <string name="turn_off">turn off</string>
+    <string name="turn_on">turn on</string>
+    <string name="find_device">find device</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="save">SAVE</string>
+    <string name="enter_results_here">enter results here...</string>
 </resources>

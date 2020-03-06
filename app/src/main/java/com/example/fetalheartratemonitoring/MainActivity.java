@@ -1,11 +1,13 @@
 package com.example.fetalheartratemonitoring;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -22,14 +24,12 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
         switch (menuItem.getItemId()) {
-            case R.id.Activity:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Activity_fragment()).commit();
-                break;
-            case R.id.settings:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Settings_fragment()).commit();
-                break;
             case R.id.Mysavings:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Mysavings_fragment()).commit();
+                break;
+
+            case R.id.Activity:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Activity_fragment()).commit();
                 break;
 
             case R.id.Tips:
@@ -41,11 +41,32 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                 startActivity(myintent);
                 break;
             case R.id.Exit:
-                Toast.makeText(this, "wait for exit please!", Toast.LENGTH_LONG).show();
+               exitMethod();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    public void exitMethod(){
+        final AlertDialog.Builder builder=new AlertDialog.Builder(MainActivity.this);
+        builder.setTitle("Exit The Activity");
+        builder.setIcon(R.mipmap.ic_launcher);
+        builder.setMessage("are you sure you want to Exit");
+        builder.setCancelable(false);
+        builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        builder.setNegativeButton("no", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+      dialog.cancel();
+            }
+        });
+        AlertDialog alertDialog=builder.create();
+        alertDialog.show();
     }
 
     @Override
@@ -66,8 +87,8 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Activity_fragment()).commit();
-            navigationView.setCheckedItem(R.id.Activity);
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Mysavings_fragment()).commit();
+            navigationView.setCheckedItem(R.id.Mysavings);
         }
 
 
@@ -81,34 +102,6 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
         }
     }
 
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.majormenu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int a = item.getItemId();
-        switch (a) {
-            case R.id.Start_Monitoring:
-                Intent myintent1 = new Intent(MainActivity.this, Activity_process_monitoring.class);
-                startActivity(myintent1);
-                break;
-
-            case R.id.Visit:
-                Intent myintent2 = new Intent(MainActivity.this, Visitweb.class);
-                startActivity(myintent2);
-                break;
-            case R.id.logout:
-                Intent myintent3 = new Intent(MainActivity.this, Login.class);
-                startActivity(myintent3);
-                break;
-            default:
-                return false;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
 
 

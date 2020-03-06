@@ -13,6 +13,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String COL_2 = "username";
     public static final String COL_3 = "password";
 
+
     public DataBaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }

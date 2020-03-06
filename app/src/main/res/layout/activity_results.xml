@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/back1"
+    android:layout_height="match_parent"
+    tools:context=".Results">
+    <TextView
+        android:layout_width="300dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:id="@+id/heading"
+        android:text="MONITOR HEART RATE HERE"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_height="30dp"
+        android:textColor="@color/c"/>
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="50dp"
+        android:src="@mipmap/fetus"
+        android:layout_height="50dp"/>
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@drawable/smallinput"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/oval"
+        android:layout_marginLeft="250dp"/>
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/oval"
+        android:layout_marginLeft="290dp"/>
+    <ImageView
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="50dp"
+        android:src="@mipmap/mother"
+        android:layout_height="50dp"/>
+    <TextView
+        android:layout_width="130dp"
+        android:background="@drawable/smallinput"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="150dp"/>
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/oval"
+        android:layout_marginLeft="250dp"/>
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/oval"
+        android:layout_marginLeft="290dp"/>
+    <Button
+        android:textColor="@color/c"
+        android:id="@+id/start"
+        android:layout_marginTop="250dp"
+        android:text="@string/start"
+        android:background="@drawable/advanced_shape"
+        android:layout_marginLeft="50dp"
+        android:layout_width="240dp"
+        android:layout_height="40dp" />
+    <Button
+        android:textColor="@color/c"
+        android:id="@+id/stop"
+        android:layout_marginTop="300dp"
+        android:text="@string/stop"
+        android:background="@drawable/advanced_shape"
+        android:layout_marginLeft="50dp"
+        android:layout_width="240dp"
+        android:layout_height="40dp" />
+    <Button
+        android:textColor="@color/c"
+        android:id="@+id/save"
+        android:layout_marginTop="360dp"
+        android:text="@string/save"
+        android:background="@drawable/advanced_shape"
+        android:layout_marginLeft="50dp"
+        android:layout_width="240dp"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

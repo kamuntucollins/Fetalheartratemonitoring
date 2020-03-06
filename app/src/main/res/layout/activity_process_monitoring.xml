@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,72 +8,162 @@
     tools:context=".Activity_process_monitoring">
 
 
-    <TextView
-        android:layout_width="290dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="40dp"
-        android:text="WELCOME TO FETAL HEART RATE MONITOR"
-        android:textStyle="bold"
-        android:id="@+id/remind"
-        android:textColor="@android:color/holo_red_light"
-        android:layout_marginTop="15dp"/>
-
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginRight="50dp"
-        android:src="@mipmap/wave" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/fet"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="250dp"
-        android:src="@mipmap/fet" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="8dp">
 
-    <TextView
-        android:layout_width="60dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="260dp"
-        android:text="120bmp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg1"
+                android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/mat"
-        android:layout_marginLeft="180dp"
-        android:layout_marginTop="250dp"
-        android:src="@mipmap/mat" />
+                    <TextView
+                        android:id="@+id/statusBluetoothTv"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/pairedTv"
+                        android:text=""
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content" />
 
-    <TextView
-        android:layout_width="60dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="240dp"
-        android:layout_marginTop="260dp"
-        android:text="200bmp" />
-
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="400dp"
-        android:background="@drawable/shape"
-        android:textColor="@android:color/white"
-        android:text="start" />
-
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="180dp"
-        android:background="@drawable/shape"
-        android:textColor="@android:color/white"
-        android:layout_marginTop="400dp"
-        android:layout_marginRight="20dp"
-        android:text="stop" />
+                        <ImageView
+                            android:id="@+id/bluetoothIv"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_alignParentRight="true"
+                            />
 
 
-</RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg1"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/onBtn"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                         android:text="@string/turn_on"
+                            android:textColor="@color/wordcolor"
+                            android:layout_alignParentRight="true"/>
+                        <Button
+                            android:id="@+id/offBtn"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:text="@string/turn_off"
+                            android:textColor="@color/wordcolor"
+                            android:layout_alignParentLeft="true"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg1"
+                android:orientation="vertical">
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="40dp">
+
+                        <Button
+                            android:id="@+id/discoverableBtn"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:text="@string/find_device"
+                            android:textColor="@color/wordcolor"
+                            android:layout_alignParentTop="true"/>
+                        <Button
+                            android:id="@+id/pairedBtn"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:text="get paired "
+                            android:textColor="@color/wordcolor"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"/>
+                    </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>
