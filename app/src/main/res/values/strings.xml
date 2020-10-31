@@ -20,4 +20,6 @@
     <string name="stop">STOP</string>
     <string name="save">SAVE</string>
     <string name="enter_results_here">enter results here...</string>
+    <string name="c1">C</string>
+    <string name="c">C</string>
 </resources>

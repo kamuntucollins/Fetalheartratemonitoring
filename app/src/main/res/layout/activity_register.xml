@@ -27,6 +27,7 @@
         android:id="@+id/edittext_username"
         android:background="@drawable/more_shape"
         android:paddingLeft="2dp"
+        android:maxLength="10"
         android:layout_width="240dp"
         android:drawableLeft="@drawable/ic_person_outline_black_24dp"
         android:layout_height="40dp"
@@ -38,6 +39,7 @@
         android:background="@drawable/more_shape"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
         android:layout_width="240dp"
+        android:maxLength="8"
         android:inputType="textPassword"
         android:layout_marginTop="30dp"
         android:layout_height="40dp"
@@ -52,6 +54,7 @@
     <EditText
         android:drawableTint="@color/gradient_start_color"
         android:id="@+id/edittext_confirm"
+        android:maxLength="8"
         android:background="@drawable/more_shape"
         android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
         android:layout_width="240dp"
