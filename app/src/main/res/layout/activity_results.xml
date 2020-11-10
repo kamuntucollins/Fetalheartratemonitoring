@@ -19,7 +19,7 @@
         android:textColor="@color/c"/>
 
     <ImageView
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="90dp"
         android:layout_marginStart="20dp"
         android:layout_width="50dp"
         android:src="@mipmap/fetus"
@@ -28,23 +28,23 @@
         android:id="@+id/view"
         android:layout_width="130dp"
         android:layout_height="50dp"
+        android:textColor="@color/shapecolor"
+        android:textSize="18dp"
+        android:textAlignment="center"
         android:background="@drawable/smallinput"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="90dp"/>
+
     <Button
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="100dp"
+        android:text="C"
+        android:textColor="@color/shapecolor"
         android:background="@drawable/oval"
-        android:layout_marginLeft="250dp"/>
-    <Button
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/oval"
-        android:layout_marginLeft="290dp"/>
+        android:layout_marginLeft="270dp"/>
     <ImageView
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="190dp"
         android:layout_marginStart="20dp"
         android:layout_width="50dp"
         android:src="@mipmap/mother"
@@ -53,53 +53,27 @@
         android:id="@+id/view2"
         android:layout_width="130dp"
         android:background="@drawable/smallinput"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/shapecolor"
         android:layout_height="50dp"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="150dp"/>
+        android:layout_marginTop="190dp"/>
+
 
     <Button
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="200dp"
+        android:text="C"
+        android:textColor="@color/shapecolor"
         android:background="@drawable/oval"
-        android:layout_marginLeft="250dp"/>
-    <Button
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="160dp"
-        android:background="@drawable/oval"
-        android:layout_marginLeft="290dp"/>
-    <Button
-        android:textColor="@color/c"
-        android:id="@+id/start"
-        android:layout_marginTop="250dp"
-        android:text="@string/start"
-        android:background="@drawable/advanced_shape"
-        android:layout_marginLeft="50dp"
-        android:layout_width="240dp"
-        android:layout_height="40dp" />
-    <Button
-        android:textColor="@color/c"
-        android:id="@+id/stop"
-        android:layout_marginTop="300dp"
-        android:text="@string/stop"
-        android:background="@drawable/advanced_shape"
-        android:layout_marginLeft="50dp"
-        android:layout_width="240dp"
-        android:layout_height="40dp" />
-    <Button
-        android:textColor="@color/c"
-        android:id="@+id/connect"
-        android:layout_marginTop="360dp"
-        android:text="connect"
-        android:background="@drawable/advanced_shape"
-        android:layout_marginLeft="50dp"
-        android:layout_width="240dp"
-        android:layout_height="40dp" />
+        android:layout_marginLeft="270dp"/>
+
     <Button
         android:textColor="@color/c"
         android:id="@+id/save"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="350dp"
         android:text="@string/save"
         android:background="@drawable/advanced_shape"
         android:layout_marginLeft="50dp"

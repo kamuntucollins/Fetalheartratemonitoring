@@ -42,7 +42,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:cacheColorHint="@color/c"
+        android:cacheColorHint="@color/gradient_start_color"
         android:layout_marginTop="30dp"
         android:id="@+id/list_view"/>
 >
